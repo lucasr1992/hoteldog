@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.teste{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	justify-content: center;
+
+}
+
+.teste img{
+	display: block;
+	width: 250px;
+	height: 250px;	
+	margin-right: 10px;
+	border: 1px solid green;
+	margin-bottom: 10px;
+
+}
