@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.botao{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0015CD;
+}
+
+.cabecalho label{
+    color: #fff;
+}
+
+.logo{
+    margin: 5px;
+    height: 1.5rem;
+}
+
+.contato img{
+    height: 1rem;
+}
+
+.contato label{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contato label{
+    font-size: 0.8rem;
+}
+
+
+.menu{
+    list-style:none;
+    display: flex;
+    background-color: #FCFF6C;
+    height: 38.5px;	
+    margin-top: 10px;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    float:left;
+    padding: 3px;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    cursor: pointer;
+}
+
+.menu a{
+    color: rgb(0, 0, 0);
+}
+
+.menu a:visited{
+    color: rgb(0, 0, 0);
+}
+
+.menu li ul li{
+    border: 1px solid #FCFF6C;
+}
+
+
+.menu li a{
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background-color: #FFD644;
+}
+
+.menu li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color: #FFD644;
+    display:none;
+}
+
+.menu li:hover{
+    background-color: #FFD644;
+}
+
+.menu li ul li a:hover{
+    background-color: #FCFF6C;
+}
+
+
+
+.menu li:hover ul{
+    display:block;
+}
+
+.menu li ul li{
+    display:block;
+    width:150px;
+    cursor: pointer;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.divMenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: auto;
+}
+
+.conteudo{
+    width: 100%;
+}
+
+.divVideo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+.video{
+    margin-top: 0px;
+    width: 95%;
+    height: 200px;
+    border: 4px solid #0015CD;
+}
+
+.sobre{
+    display: flex;
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.sobre img{
+    height: 10rem;
+}
+
+.texto{
+    background-color: #FCFF6C;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    max-width: 640px;
+
+}
+
+
+.texto label{
+    margin: 5px;
+    text-align: center;
+    height: 120px;
+    max-width: 640px;
+}
+
+.texto button{
+    width: 30%;
+    background: #0015CD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    margin-left: 30%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.texto button a:visited {
+    color: #fff;
+}
+
+.texto button:hover{
+    background: #364afd;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.hamburguer, .textoMenu{
+    display: none;
+}
+
+.hamburguer .subH{
+    display: none;
+}
+
+
+
+@media (max-width: 650px) {
+    .sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFerias{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .sobre img{
+        height: 15rem;
+        width: 25rem;
+        
+    }
+
+    .texto{
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        order: -1;
+        background-color: #ffffff00;
+    }
+
+    .texto label{
+        text-align: center;
+        height: 160px;
+        margin: 2px;
+    }
+
+    
+}
+
+
+@media (max-width: 560px) {
+    .divMenu .menu .itens{
+        display: none;
+    }
+    .menu{
+        justify-content: start;
+        height: 38.5px;
+    }
+
+    .textoMenu{
+        display: flex;
+    }
+
+    .hamburguer{
+        display: flex;
+        flex-direction: column;		
+        margin-right: 10px;
+        margin-left: 10px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    
+
+    .hamburguer .ham1, .ham2, .ham3{
+        margin: 2px;
+        width: 30px;
+        background-color: black;
+        height: 2px;
+    }
+
+    .hamburguer:hover ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburguer ul{
+        position:absolute;
+        top:73px;
+        left:22px;
+        background-color: #FFD644;
+        list-style: none;
+        display: none;		
+    }
+
+    .hamburguer ul li{
+        border: 1px solid #FCFF6C;
+    }
+
+    .hamburguer ul a:hover{
+        background-color:#FCFF6C;
+    }
+
+    .hamburguer .subH{
+        display: none;
+    }
+
+    .hamburguer .itensHS:hover .subH{
+        position: relative;
+        top:-25px;
+        left:184px;
+        background-color: #FFD644;
+        list-style: none;
+        display: block;	
+    }
+
+    .hamburguer .itensHS:hover ul{
+        height: 120px;
+    }
+
+
+		.creche{
+			flex-direction: column;
+		}
+
+		.selecao{
+			flex-direction: column;
+		}
+
+		.alimentacaoDiv{
+			flex-direction: column;
+		}
+
+		.Agenda{
+			flex-direction: column;
+		}
+}
+
+@media (max-width: 520px) {
+    .sobre img{
+        height: 15rem;
+        width: 20rem;
+    }
+    .contato label{
+        font-size: 8px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .contato .waths{
+        margin-left: 2px;
+        font-size: 5.5px;
+    }	
+}
+
+.conteudo{
+    padding: 20px;
+}
+
+.creche {
+    display: flex;
+}
+
+.creche div{
+    margin-left: 5px;
+}
+
+.creche .titulo{
+    font-size: 40px;
+}
+
+.creche label{
+    font-size: 18px;
+}
+.conteudo .creche .imgCreche{
+    height:200px ;	
+}
+
+.conteudo .creche .icon{
+    margin-top: 4px;
+    height: 15px;
+}
+
+.selecaoIMG{
+    height: 250px;
+}
+
+.selecao{
+    margin-top: 40px;
+    display: flex;
+}
+
+.selecao div{
+    margin-right: 14px;
+}
+.selecao h1{
+    font-size: 40px;
+}
+
+.selecao label{
+    font-size: 17px;
+}
+
+.saudeLabel{
+    
+    font-size: 15px;
+}
+
+.saudeIMG{
+  width: 100%;
+	height: 200px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.saudeDiv{
+	margin-top: 15px;
+	background-color: #FCFF6C;
+	width: 100%;
+	padding: 5px;
+}
+
+.saudeDiv h1{
+	font-size: 40px;	
+}
+
+.saudeDiv img{
+	height: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.saudeDiv .info{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.alimentacaoDiv h1{
+	font-size: 40px;
+}
+
+.alimentacaoDiv label{
+	font-size: 17px;
+}
+
+.alimentacaoDiv{
+	margin-top: 20px;
+	display: flex;
+}
+
+.alimentacaoDiv div{
+	margin-left: 10px;
+}
+
+.Agenda div{
+	display: flex;
+	flex-direction: column;
+}
+
+.Agenda label{
+	font-size: 18px;
+}
+
+
+.Agenda h1{
+	font-size: 40px;
+}
+
+.Agenda{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
