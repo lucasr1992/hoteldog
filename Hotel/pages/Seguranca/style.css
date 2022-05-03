@@ -361,3 +361,43 @@ a{
 	}	
 }
 
+
+.conteudo{
+	display: flex;
+	padding: 2.2%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imgA{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.conteudo h1{
+	font-size: 40px;
+}
+
+.conteudo label{
+	font-size: 18px;
+}
+
+.imgB{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+
+@media (max-width: 750px) {
+	.imgA{
+		height: 120px;
+	}
+
+	.imgB{
+		height: 120px;
+	}
+}

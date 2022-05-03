@@ -361,3 +361,116 @@ a{
 	}	
 }
 
+.local{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1% 5%;
+}
+
+.local h1{
+	font-size: 40px;
+}
+
+.local label{
+	font-size: 18px;
+}
+
+.local img{
+	height: 450px;
+	width: 95%;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.fotos img{
+	height: 250px;
+
+}
+
+.fotos{
+	height: 700px;
+}
+
+.condoA{
+	position: absolute;
+	top: 750px;
+	left: 13%
+}
+
+.condoB{
+	position: absolute;
+	top: 900px;
+	left: 47%
+}
+
+.condoC{
+	position: absolute;
+	top: 1100px;
+	left: 17%;
+	z-index: -1;
+	
+}
+
+
+@media (max-width: 960px) {
+	.condoA{
+		left: 9%
+	}
+	
+	.condoB{
+		left: 35%
+	}
+	
+	.condoC{
+		left: 11%;		
+	}
+}
+
+@media (max-width: 960px) {
+	.condoA{
+		left: 4%
+	}
+	
+	.condoB{
+		left: 27%
+	}
+	
+	.condoC{
+		left: 6%;		
+	}
+}
+
+@media (max-width: 705px) {
+	.condoA{
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: 10px;
+	}
+	
+	.condoB{
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: 10px;
+	}
+	
+	.condoC{
+		position: relative;	
+		top: 0;
+		left: 0;	
+		margin-bottom: 10px;
+	}
+
+	.fotos{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 800px;
+	}
+
+	.local img{
+		height: 240px;
+	}
+}

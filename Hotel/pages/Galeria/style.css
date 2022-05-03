@@ -361,3 +361,69 @@ a{
 	}	
 }
 
+.conteudo{
+	padding: 1% 3%;
+}
+
+.conteudo h1{
+	font-size: 40px;
+}
+
+.fotos{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 20px;
+	justify-content: center;
+}
+
+.fotos img{
+	display: block;
+	width: 250px;
+	height: 250px;	
+	margin-right: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+
+
+.modal{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.199);
+	position: fixed;
+	padding: 20px;
+	z-index: 10;
+	visibility: hidden;
+}
+.modal-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.modal-content img{
+	height: 90vh;
+}
+
+.modal span{
+	color: rgb(0, 0, 0);
+	background-color: #FFFFFF;
+	box-shadow: 0px 9px 5px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	padding: 15px 25px;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.modal_active{
+	visibility: visible;
+	
+}
+
+
