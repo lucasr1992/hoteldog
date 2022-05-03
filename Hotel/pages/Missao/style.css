@@ -361,3 +361,103 @@ a{
 	}	
 }
 
+
+.quente{
+	display: flex;
+	padding: 2.5%;
+}
+
+.quente img{
+	height: 350px;
+}
+
+.textoQuente h1{
+	font-size: 40px;
+}
+
+.textoQuente label{
+	font-size: 18px;
+}
+
+
+.descanso{
+	display: flex;
+	padding: 2.5%;
+}
+
+
+
+.descanso img{
+	height: 350px;
+	margin-right: 10px;
+}
+
+.textoDescanso h1{
+	font-size: 40px;
+}
+
+.textoDescanso label{
+	font-size: 18px;
+}
+
+
+.sombra{
+	display: flex;
+	padding: 2.5%;
+}
+
+
+.sombra img{
+	height: 350px;
+	margin-right: 10px;
+}
+
+.textoSombra h1{
+	font-size: 40px;
+}
+
+.textoSombra label{
+	font-size: 18px;
+}
+
+@media (max-width: 800px) {
+	.quente{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.quente img{
+		margin-top: 10px;
+		width: 75%;
+		height: 350px;
+	}
+
+	.descanso{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.descanso img{
+		margin-top: 10px;
+		width: 75%;
+		height: 350px;
+	}
+
+	.textoDescanso{
+		order: -1;
+	}
+
+	.sombra{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sombra img{
+		margin-top: 10px;
+		width: 75%;
+		height: 350px;
+	}
+
+}
+
+

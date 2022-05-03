@@ -210,6 +210,13 @@ a{
 }
 
 
+@media (max-width: 660px) {
+	.divConteudo{
+		flex-direction: column;
+	}
+
+}
+
 @media (max-width: 650px) {
 	.sobre{
 		display: flex;
@@ -361,3 +368,40 @@ a{
 	}	
 }
 
+.conteudo{
+	padding: 10px 3%;
+}
+
+.titulo{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.titulo h1{
+	font-size: 50px;
+	margin-bottom: 5px;
+}
+
+.divConteudo{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.imgesDiv{
+	display: flex;
+	flex-direction: column;
+}
+
+.imgesDiv img{
+	margin-top: 10px;
+	height: 250px;
+	width: 350px;
+	
+}
+
+.divConteudo label{
+	margin-top: 20px;
+	margin-left: 10px;
+}

@@ -361,3 +361,96 @@ a{
 	}	
 }
 
+.conteudo{
+	padding: 3%;
+}
+
+.tituloPag{
+	margin-top: 10px;
+	font-size: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.imagens{
+	width: 100%;
+	height: 530px;
+}
+
+
+.imgA{
+	position: absolute;
+	top: 190px;
+	left: 18%;
+	height: 300px;
+	width: 350px;
+}
+
+
+.imgB{
+	position: absolute;
+	top: 370px;
+	left: 35%;
+	height: 300px;
+	width: 380px;
+}
+
+.imgC{
+	z-index: -1;
+	position: absolute;
+	top: 210px;
+	left: 58%;
+	height: 300px;
+	width: 380px;
+}
+
+
+.conteudoDois{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 4%;
+}
+
+.conteudoDois img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.conteudoDois h1{
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+	.imagens{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 2% 5%;
+	}
+	.imagens img{
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: 5px;
+		height: 150px;
+		width: 200px;
+	}
+
+	.conteudo{
+		display: flex;
+	}
+
+	.conteudoDois h1{
+		order: -1;
+	}
+	.conteudoDois label{
+		order: -1;
+	}
+}
+
+
